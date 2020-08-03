@@ -13,7 +13,7 @@
 }
 @media (max-width: 540px) {
   .container {
-    width: 80%;
+    width: 300px;
   }
 }
 
@@ -54,7 +54,7 @@ p {
 }
 
 .container {
-  width: 800px;
+  width: 80%;
   margin: 0 auto;
 }
 
