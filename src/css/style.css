@@ -16,6 +16,7 @@ h2 {
   text-align: center;
   size: 16pt;
   color: #fff;
+  font-weight: bold;
 }
 @media screen and (max-width:768px)
 {
@@ -27,6 +28,7 @@ h2 {
   }
   h2 {
     size: 14pt;
+    font-weight: bold;
   }
 }
 a {
@@ -153,7 +155,7 @@ a {
 }
 
 
-#logo{
+/*#logo{
   text-align: center;
   margin: -125px 0 0 -175px;
 }
@@ -162,7 +164,7 @@ a {
   min-width: 70px;
   max-width: 120px;
 }
-
+*/
 
 /***********************/
 /* Menu                */
@@ -208,7 +210,7 @@ a {
 /***********/
 #content {
   margin: -4vw 1.6vw;
-  padding: 0;
+  padding: 0 0 40px 0;
   background-image: url('../images/sheetfilm_05.png');
   background-repeat: repeat-y;
   background-size: auto;
@@ -219,7 +221,7 @@ a {
 }
 .entry-content {
   clear: both;
-  padding: 0 30px 0 30px;
+  padding: 0 8vw 0 8vw;
   text-align: center;
 }
 .entry-content p {
@@ -230,13 +232,13 @@ a {
   display: inline-block;
   border-radius: 3px;
   color: black;
-  padding: 6px;
+  padding: 5px;
   margin: 5px;
   font-size: 10px;
   text-align: center;
 }
 #org-list img {
-  height: 80px;
+  height: 70px;
 }
 
 #artist-list div {
@@ -266,6 +268,7 @@ a {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
 }
 @media screen and (max-width:576px) {
   #app-list {
@@ -302,21 +305,26 @@ a {
   flex-grow: 1;
   background: #1e1e1e;
   border-radius: 0 100% 0 0;
+  text-decoration: underline;
+  text-decoration-color: #413A3A;
+  text-decoration-style: double;
+  border-radius: 0 100% 0 0;
 }
 #app-list .card-title i {
   margin: 30px 10px 10px -20px;
   padding: 8px;
   box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.7);
-  background: #37718E;
+  background: #1B9AAA;
   border: 1px solid rgba(1, 1, 1, 0.3);
   border-radius: 50%;
+  color: #F5F1E0;
 }
 @media screen and (max-width:576px) {
   #app-list .card-title span {
     padding: 45px 10px 10px;
   }
   #app-list .card-title i {
-    margin: 35px 10px 10px;
+    margin: 35px 10px 10px -20px;
   }
 }
 #app-list .card-body {
