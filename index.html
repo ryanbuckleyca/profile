@@ -1,292 +1,206 @@
-<!--
-    RyanBuckley.ca
-    Manual-coded site
-    HTML5 and CSS test
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito|Neucha|Amatica+SC" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <link rel="stylesheet" href="src/css/swipebox.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<script type="text/javascript">
-//<![CDATA[
-window.onload = function(){
-    document.getElementById('foundRight').onmousedown = function () {
-      document.getElementById('found').scrollLeft += 200;
-    };
-    document.getElementById('foundLeft').onmousedown = function () {
-      document.getElementById('found').scrollLeft -= 200;
-    };
-
-    document.getElementById('dry-plateRight').onmousedown = function () {
-      document.getElementById('dry-plate').scrollLeft += 200;
-    };
-    document.getElementById('dry-plateLeft').onmousedown = function () {
-      document.getElementById('dry-plate').scrollLeft -= 200;
-    };
-
-    document.getElementById('cuttingsRight').onmousedown = function () {
-      document.getElementById('cuttings').scrollLeft += 200;
-    };
-    document.getElementById('cuttingsLeft').onmousedown = function () {
-      document.getElementById('cuttings').scrollLeft -= 200;
-    };
-
-    document.getElementById('maritimeRight').onmousedown = function () {
-      document.getElementById('maritime').scrollLeft += 200;
-    };
-    document.getElementById('maritimeLeft').onmousedown = function () {
-      document.getElementById('maritime').scrollLeft -= 200;
-    };
-
-  };
-  //]]>
-  </script>
-
-    <title>Ryan Buckley &#8211; Photo Preservation</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito|Neucha|Amatica+SC" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">  <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Buckley &#8211; Photo Preservation</title>
 </head>
 
 <body>
 <div id="container">
-    <header id="top-section">
-        <div>&nbsp;</div>
-    </header>
-
-    <main id="content">
-
-    <div class="sections">
-        <img class="profile" src="square-me.jpg" />
-        <div class="speech">
-            <div class="entry-content">
-            <p>Hey, I'm Ryan. I am a visual culture collections manager.
-                I specialize in organizing materials and data for archives in the photography community.
-                I make websites and databases for artists.
-                I also collect snapshots and re-print found negatives.
-                I&#8217;m interested in <a href="#preservation">preservation</a>,
-                <a href="#access">access</a>, and
-                <a href="#impermanence">impermanence</a>.
-            </p>
-            </div>
-        </div>
+  <header id="top-section"><div>&nbsp;</div></header>
+  <main id="content">
+    <div class="divider">
+      <img class="profile" src="src/images/square-me.jpg" />
+      <div class="speech">
+        <p>Hey, I'm Ryan. I develop digital solutions for artists and archives in the photography community. I create websites, databases, and catalogs to help showcase, preserve, and manage visual assets.</p>
+        <span id="social">
+            <a href="https://www.linkedin.com/in/ryanbuckleyca/"><img src="src/images/socialicons_01.png" /></a>
+            <a href="https://github.com/ryanbuckleyca/"><img src="src/images/socialicons_02.png" /></a>
+            <a href="https://www.instagram.com/apinrise/"><img src="src/images/socialicons_03.png" /></a>
+        </span>
+      </div>
     </div>
-
-    <!-- where to put? ---
-    <span id="social">
-        <a href="#"><img src="images/socialicons_01.png" /></a>
-        <a href="#"><img src="images/socialicons_02.png" /></a>
-        <a href="#"><img src="images/socialicons_03.png" /></a>
-    </span>
-    --- where to put? --->
-
-    <!-- where to put? ---
-    <div id="logo">
-        <a href="http://ryanbuckley.ca/" rel="home" itemprop="url">
-            <img src="sig.png" alt="Ryan Buckley" itemprop="logo" />
-        </a>
-    </div>
-    --- where to put? --->
-
     <div id="menu">
-        <a href="#preservation">preservation</a>
-        <a href="#access">access</a>
-        <a href="#impermanence">impermanence</a>
+      <a href="#clients"><i class="fa fa-heart"></i> clients</a>
+      <a href="#apps"><i class="fa fa-rocket"></i> applications</a>
+      <a href="#contact"><i class="fa fa-at"></i> contact</a>
     </div>
-
     <div class="entry-content">
-        <a class="anchor" name="preservation">&nbsp;</a>
-        <h1>preservation</h1>
-        <p>I work with photographers and organizations to preserve and manage their archives.</p>
-        <div class="sections">
-            <span>
-                <u>Institutions/Organizations:</u><br />
-                <ul>
-                    <li> Magnum Photos</li>
-                    <li> International Center of Photography</li>
-                    <li> American Photography Archives Group</li>
-                    <li> Buddhist Archive of Photography</li>
-                    <li> Magnum Foundation</li>
-                    <li> Archive of Modern Conflict</li>
-                    <li> Interference Archive</li>
-                    <li> Ryerson Image Centre</li>
-                    <li> George Eastman Museum</li>
-                    <li> Pictou Historical Photograph Society</li>
-                    <li> Be-hold</li>
-                </ul>
-            </span>
-            <span>
-                <u>Photographers/Artists:</u><br />
-                <ul>
-                    <li> <a href="http://www.susanmeiselas.com/">Susan Meiselas</a></li>
-                    <li> Yto Barrada</li>
-                    <li> Wendy Ewald</li>
-                    <li> Paul Fusco</li>
-                    <li> Robert Burley</li>
-                    <li> Abigail Heyman</li>
-                    <li> Meghann Riepenhoff</li>
-                    <li> Dorothy Beskind</li>
-                    <li> Henry Grossman</li>
-                    <li> Ken Heyman
-                </ul>
-            </span>
-        </div>
+      <a class="anchor" name="clients">&nbsp;</a>
+      <h1>clients</h1>
+      <h2>Institutions/Organizations:</h2>
+      <div id="org-list">
+          <a href="http://www.magnumphotos.com"><img src="src/logos/magnum.jpeg"></a>
+          <a href="http://www.icp.org"><img src="src/logos/icp.png"></a>
+          <a href="http://www.apag.us"><img src="src/logos/apag.png"></a>
+          <a href="http://www.buddhist-archive.org"><img src="src/logos/bap.png"></a>
+          <a href="http://www.be-hold.com"><img src="src/logos/behold.png"></a>
+          <a href="http://www.archiveofmodernconflict.com/"><img src="src/logos/amc.png"></a>
+          <a href="http://www.interferencearchive.org"><img src="src/logos/ia.png"></a>
+          <a href="http://www.ryersonimagecentre.ca"><img src="src/logos/ric.png"></a>
+          <a href="http://www.eastman.org/"><img src="src/logos/gem.jpeg"></a>
+          <a href="http://www.pictouphotos.ca/"><img src="src/logos/phps.png"></a>
+          <a href="http://www.magnunfoundation.org"><img src="src/logos/mf.png"></a> 
+      </div>
+      <h2>Photographers/Artists:</h2>
+      <div id="artist-list">
+        <div><a href="http://www.susanmeiselas.com/"><img src="src/clients/mes.jpg">Susan Meiselas</div></a>
+        <div><a href="https://www.imogencunningham.com/"><img src="src/clients/cui.jpg">Imogen Cunningham</div></a>
+        <div><a href="https://www.elliotterwitt.com/"><img src="src/clients/ere.jpg">Elliott Erwitt</div></a>
+        <div><a href="https://www.magnumphotos.com/photographer/paul-fusco/"><img src="src/clients/fup.jpg">Paul Fusco</div></a>
+        <div><a href="http://www.ytobarrada.com/"><img src="src/clients/yto.jpg">Yto Barrada</div></a>
+        <div><a href="https://wendyewald.com/"><img src="src/clients/eww.jpg">Wendy Ewald</div></a>
+        <div><a href="http://robertburley.com/"><img src="src/clients/bur.jpg">Robert Burley</div></a>
+        <div><a href="https://www.abigailheyman.com/"><img src="src/clients/hea.jpg">Abigail Heyman</div></a>
+        <div><a href="http://meghannriepenhoff.com/"><img src="src/clients/rim.jpg">Meghann Riepenhoff</div></a>
+        <div><a href="https://www.legacy.com/obituaries/nytimes/obituary.aspx?n=dorothy-m-beskind&pid=173026644"><img src="src/clients/bed.jpg">Dorothy Beskind</div></a>
+        <div><a href="https://www.henrygrossman.com/"><img src="src/clients/grh.jpg">Henry Grossman</div></a>
+        <div><a href="https://www.kenheyman.com/index"><img src="src/clients/hek.jpg">Ken Heyman</div></a>
+      </div>
     </div>
-
     <div class="entry-content">
-        <a class="anchor" name="access">&nbsp;</a>
-        <h1>access</h1>
-        <p>I help individuals and oranizations promote themselves.
-            I work to bring data and collections materials to physical and digital audiences.
-            I'm interested in open-access, digitization, and web development.
-            Here are a few examples of my work:
-        </p>
+      <a class="anchor" name="apps">&nbsp;</a>
+      <h1>applications</h1>
 
-        <div class="scrolling-wrapper-flexbox">
-            <div class="card"> <a href="http://www.magnumconsortium.net/" title=""><img src="magnumconsortium.png" width="" height="300" /></a> </div>
-            <div class="card"> <a href="http://www.be-hold.com/" title=""><img src="be-hold.png" width="" height="300" /></a> </div>
-            <div class="card"> <a href="http://www.ryanbuckley.ca/findingaid/chusseau-flaviens.xml" title=""><img src="chusseau-flaviens.png" width="" height="300" /></a> </div>
+      <div id="app-list" class="row">
+        <a href="http://www.commonscloud.cc/" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/commonscloud.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave6.svg')">
+            <span>Community platform</span>
+            <i class="fa fa-gem"></i>
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="card-body">
+            CommonsCloud.cc is a community mutual aid app build with Ruby on Rails.
+          </div>
+        </a>
 
-            <div class="card"> <a href="http://www.abigailheyman.com" title=""><img src="heymanwebsite.png" width="" height="300" /></a> </div>
-        </div>
+        <a href="http://freewheelnow.herokuapp.com/" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/freewheel.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave2.svg')">
+            <span>Online marketplace</span>
+            <i class="fa fa-gem"></i>
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="card-body">
+            I helped as a lead developer to build an online marketplace in Ruby on Rails to rent and lease interesting and high-end bikes by the hour, day, or week.
+          </div>
+        </a>
+
+        <a href="http://311.rocks/" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/grocery-list.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave4.svg')">
+            <span>Mobile design</span>
+            <i class="fab fa-pagelines"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="card-body">
+            Web-based cross-platform apps like GroceryList, an application for roomates to share the task of shopping, built in Express.js and a light-weight React alternative "Reef.js".
+          </div>
+        </a>
+
+
+        <a href="http://www.magnumconsortium.net/" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/magnumconsortium.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave1.svg')">
+            <span>Drupal development</span>
+            <i class="fab fa-drupal"></i>
+          </div>
+          <div class="card-body">
+            I have experience with Drupal, like the MagnumConsortium pilot project demonstrating an online consortium relating collecting instutions around the world.
+          </div>
+        </a>
+
+        <a href="#" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/filemaker.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave1.svg')">
+            <span>Custom Filemaker databases</span>
+            <i class="fas fa-folder-open"></i>
+          </div>
+          <div class="card-body">
+            For the past several years I've built dozens of custom Filemaker databases for artists looking for low-cost, DIY archiving tools.
+          </div>
+        </a>
+
+
+        <a href="http://www.be-hold.com/" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/be-hold.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave2.svg')">
+            <span>Wordpress</span>
+            <i class="fab fa-wordpress"></i>
+          </div>
+          <div class="card-body">
+            I've constructed headless Wordpress CMS for ease of back-end editing with custom-integrated phpList for low-cost newsletter distribution.
+          </div>
+        </a>
+
+        <a href="http://www.ryanbuckley.ca/findingaid/chusseau-flaviens.xml" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/chusseau-flaviens.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave4.svg')">
+            <span>EAD finding aids</span>
+            <i class="fa fa-code"></i>
+          </div>
+          <div class="card-body">
+            I can build an XML/EAD finding aid like this one I made for George Eastman Museum using XSLT and Flickr API to enhance traditional static museum research tools.
+          </div>
+        </a>
+
+        <a href="http://www.abigailheyman.com" title="">
+          <div class="card-img" style="
+              background-image: url('src/apps/heymanwebsite.png')">
+          </div>
+          <div class="card-title" style="
+              background-image: url('src/images/wave6.svg')">
+            <span>Squarespace set-up</span>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-squarespace"></i>
+          </div>
+          <div class="card-body">
+            I have experience setting up quick plug-and-play squarespace sites with themed layouts and custom css.
+          </div>
+        </a>
+
+      </div>
     </div>
-
     <div class="entry-content">
-        <a class="anchor" name="impermanence">&nbsp;</a>
-        <h1>impermanence</h1>
-
-        <p><strong>Found</strong> - negatives and prints from antique shop rummage bins. Negatives are re-printed using traditional darkroom techniques and prints are rehoused in found frames.<br />
-
-        <div style="display:flex; align-items:center; margin-left:-30px; margin-right:-30px">
-          <div style="flex-basis: 5%; background:#333; padding:10px 0">
-           <button id="foundLeft" type="button">&lt;</button>
-          </div>
-          <div class="scrolling-wrapper-flexbox" id="found" style="flex-basis:90%; align-items: center">
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4152.jpg" class="swipebox" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4152-234x300.jpg" width="234" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4174-1.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4174-1-300x272.jpg" width="300" height="272" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4320.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4320-300x242.jpg" width="300" height="242" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/Mrs-Mallochs-kisses_combined.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/Mrs-Mallochs-kisses_combined-300x292.jpg" width="300" height="292" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4172-copy-2.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4172-copy-2-300x298.jpg" width="300" height="298" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4170-1.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4170-1-184x300.jpg" width="184" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4172-copy.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4172-copy-185x300.jpg" width="185" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4171.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4171-183x300.jpg" width="183" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4166-1.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4166-1-300x110.jpg" width="300" height="110" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4158.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4158-300x191.jpg" width="300" height="191" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4172.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4172-300x158.jpg" width="300" height="158" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4162.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4162-300x144.jpg" width="300" height="144" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4164-1.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4164-1-300x126.jpg" width="300" height="126" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4160.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4160-260x300.jpg" width="260" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4171-1.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4171-1-300x247.jpg" width="300" height="247" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4171-3.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4171-3-255x300.jpg" width="255" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4319.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4319-300x242.jpg" width="300" height="242" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4318.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4318-300x241.jpg" width="300" height="241" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4321.jpg" class="swipebox" rel="found" rel="found"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/MG_4321-300x244.jpg" width="300" height="244" /></a> </div>
-          </div>
-          <div style="flex-basis:5%; background:#333; padding:10px 0">
-           <button id="foundRight" type="button">&gt;</button>
-          </div>
-        </div>
-
-        <p><strong>Dry-Plate</strong> &#8211; DIY gelatin-silver dry-plate. Emulsion from scratch on hand-cut glass.<br />
-
-          <div style="display:flex; align-items:center; margin-left:-30px; margin-right:-30px">
-          <div style="flex-basis: 5%; background:#333; padding:10px 0">
-           <button id="dry-plateLeft" type="button">&lt;</button>
-          </div>
-          <div class="scrolling-wrapper-flexbox" id="dry-plate" style="flex-basis:90%; align-items: center">
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/47626_473045497398_3805292_n.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/47626_473045497398_3805292_n-300x234.jpg" width="300" height="234" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/132382_473045242398_1779933_o.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/132382_473045242398_1779933_o-239x300.jpg" width="239" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/55441_473045297398_4569839_o.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/55441_473045297398_4569839_o-300x239.jpg" width="300" height="239" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/33975_473045527398_4733515_n.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/33975_473045527398_4733515_n-253x300.jpg" width="253" height="300" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/156974_475986382398_1598163_n.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/156974_475986382398_1598163_n-300x199.jpg" width="300" height="199" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/39414_475986332398_76434_n.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/39414_475986332398_76434_n-300x199.jpg" width="300" height="199" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/65796_475986077398_6650217_n.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/65796_475986077398_6650217_n-300x199.jpg" width="300" height="199" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/154691_475985907398_8100990_n.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/154691_475985907398_8100990_n-300x199.jpg" width="300" height="199" /></a> </div>
-              <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/69739_475985747398_3213285_n.jpg" class="swipebox" rel="dry-plate"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/69739_475985747398_3213285_n-300x199.jpg" width="300" height="199" /></a> </div>
-          </div>
-          <div style="flex-basis:5%; background:#333; padding:10px 0">
-           <button id="dry-plateRight" type="button">&gt;</button>
-          </div>
-        </div>
-
-
-        <p><strong>Cuttings</strong> &#8211; Highway 104<br />
-
-          <div style="display:flex; align-items:center; margin-left:-30px; margin-right:-30px">
-          <div style="flex-basis: 5%; background:#333; padding:10px 0">
-           <button id="cuttingsLeft" type="button">&lt;</button>
-          </div>
-
-        <div class="scrolling-wrapper-flexbox" id="cuttings" style="flex-basis:90%; align-items: center">
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663322398_3127614_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663322398_3127614_n-238x300.jpg" width="238" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663332398_8182698_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663332398_8182698_n-238x300.jpg" width="238" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663327398_1955373_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663327398_1955373_n-238x300.jpg" width="238" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663317398_2241078_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663317398_2241078_n-238x300.jpg" width="238" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663347398_6072547_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663347398_6072547_n-232x300.jpg" width="232" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663342398_2530413_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663342398_2530413_n-239x300.jpg" width="239" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663352398_7113635_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663352398_7113635_n-239x300.jpg" width="239" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663357398_4324776_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663357398_4324776_n-239x300.jpg" width="239" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663312398_2799618_n.jpg" class="swipebox" rel="cuttings"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/10391524_135663312398_2799618_n-235x300.jpg" width="235" height="300" /></a> </div>
-        </div>
-
-          <div style="flex-basis:5%; background:#333; padding:10px 0">
-           <button id="cuttingsRight" type="button">&gt;</button>
-          </div>
-        </div>
-
-        <p><strong>Maritime</strong><br />
-
-          <div style="display:flex; align-items:center; margin-left:-30px; margin-right:-30px">
-          <div style="flex-basis: 5%; background:#333; padding:10px 0">
-           <button id="maritimeLeft" type="button">&lt;</button>
-          </div>
-
-        <div class="scrolling-wrapper-flexbox" id="maritime" style="flex-basis:90%; align-items: center">
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/200539_4885597398_2683_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/200539_4885597398_2683_n-225x300.jpg" width="225" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/196847_4885702398_2346_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/196847_4885702398_2346_n-295x300.jpg" width="295" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/189189_4885682398_6975_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/189189_4885682398_6975_n-300x234.jpg" width="300" height="234" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/188329_4885612398_3912_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/188329_4885612398_3912_n-298x300.jpg" width="298" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/190305_4885602398_3061_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/190305_4885602398_3061_n-297x300.jpg" width="297" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/196443_4885637398_8936_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/196443_4885637398_8936_n-231x300.jpg" width="231" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/197539_4885687398_7488_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/197539_4885687398_7488_n-300x300.jpg" width="300" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/189245_4885667398_5618_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/189245_4885667398_5618_n-228x300.jpg" width="228" height="300" /></a> </div>
-            <div class="card"> <a href="http://ryanbuckley.ca/wp-content/uploads/2018/07/197371_4885632398_8333_n.jpg" class="swipebox" rel="maritime"><img src="http://ryanbuckley.ca/wp-content/uploads/2018/07/197371_4885632398_8333_n-297x300.jpg" width="297" height="300" /></a> </div>
-        </div>
-
-          <div style="flex-basis:5%; background:#333; padding:10px 0">
-           <button id="maritimeRight" type="button">&gt;</button>
-          </div>
-        </div>
-
+      <a class="anchor" name="contact">&nbsp;</a>
+      <h1>contact</h1>
+      For now, the best way to reach me is through one of the following:
+      <h1>
+          <a href="https://www.linkedin.com/in/ryanbuckleyca/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/apinrise/"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/ryanbuckleyca"><i class="fab fa-facebook"></i></a>
+      </h1>
     </div>
-
-    <div class="entry-content">
-        &nbsp;
-    </div>
-
-    </main><!-- #main -->
-
+  </main><!-- #main -->
 </div><!-- #page -->
-
 <footer>
-    <div>
-        &copy; copyright 2019, all rights reserved
-    </div>
-
+  <div>&copy; copyright 2019, all rights reserved</div>
 </footer>
-<script src="lib/jquery-2.1.0.min.js"></script>
-<script src="src/js/jquery.swipebox.js"></script>
-    <script type="text/javascript">
-    ;( function( $ ) {
-
-      $( '.swipebox' ).swipebox();
-
-    } )( jQuery );
-    </script>
-
 </body>
 </html>
