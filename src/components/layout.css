@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Neucha&family=Nunito:wght@300&display=swap');
+
+body {
+  font-size: 16pt;
+  font-family: 'Nunito', sans-serif;
+  background-color: #d0d0d0;
+  color: #ececec;
+  margin: 0;
+}
+h1 {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  size: 22pt;
+  color: #00cdcd;
+}
+h2 {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  size: 16pt;
+  color: #fff;
+  font-weight: bold;
+}
+@media screen and (max-width:768px)
+{
+  body {
+    font-size: 14pt;
+  }
+  h1 {
+    size: 20pt;
+  }
+  h2 {
+    size: 14pt;
+    font-weight: bold;
+  }
+}
+a {
+  color: #ececec;
+  text-decoration: underline;
+}
+.anchor {
+  text-decoration: none;
+  padding-top: 25px;
+}
+
+#container{
+  padding: 2.2vw 1vw;
+  background-image: url('../../static/images/sheetfilm_01.png');
+  background-size: 45%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+#top-section {
+  background-image: url('../../static/images/sheetfilm_03.png');
+  background-repeat: repeat-y;
+  background-size: 100%;
+  padding: 1vw 4vw 1vw 4vw;
+}
+
+/***********/
+/* content */
+/***********/
+#content {
+  margin: -4vw 1.6vw;
+  padding: 0 0 40px 0;
+  background-image: url('../../static/images/sheetfilm_05.png');
+  background-repeat: repeat-y;
+  background-size: auto;
+  background-position-x: center;
+}
+.entry-header {
+  font-family: 'Leckerli One', sans-serif;
+}
+.entry-content {
+  clear: both;
+  padding: 0 8vw 0 8vw;
+  text-align: center;
+}
+.entry-content p {
+  padding: 10px 10px 20px 10px;
+}
+
+/*************************/
+/* copyright and whatnot */
+/*************************/
+footer {
+  font-size: 10pt;
+  color: grey;
+  text-align: center;
+  padding: 35px;
+  background-image: url('../../static/images/sheetfilm_07.png');
+  background-size: 100%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}

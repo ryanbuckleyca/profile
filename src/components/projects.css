@@ -1,0 +1,73 @@
+#app-list {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+@media screen and (max-width:576px) {
+  #app-list {
+    grid-template-columns: 1fr;
+  }
+}
+#app-list div {
+  display: inline-block;
+}
+
+#app-list .card-img {
+  height: 25vw;
+  width: 99%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:576px) {
+  #app-list .card-img {
+    height: 50vw;
+  }
+}
+
+#app-list .card-title {
+  margin-top: -45px;
+  padding-top: 25px;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+#app-list .card-title span {
+  margin: 0;
+  padding: 5px 10px 5px;
+  text-align: left;
+  flex-grow: 1;
+  background: #1e1e1e;
+  border-radius: 0 75% 0 0 !important;
+  text-decoration: underline;
+  text-decoration-color: #413A3A;
+  text-decoration-style: double;
+  border-radius: 0 100% 0 0;
+}
+#app-list .card-title .icons {
+  white-space: nowrap;
+  padding-right: 15px;
+}
+#app-list .card-title .icon {
+  width: 16px;
+  margin: 0 -5px 0 0;
+  padding: 5px;
+  box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.7);
+  background: #FDFBEC;
+  border: 1px solid rgba(1, 1, 1, 0.3);
+  border-radius: 50%;
+}
+#app-list .card-body {
+  text-align: left;
+  padding: 0 10px;
+  font-size: 80%;
+  width: 100%;
+}
+#app-list a {
+  width: 100%;
+  text-decoration: none;
+}

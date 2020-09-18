@@ -1,0 +1,22 @@
+#artist-list div {
+  display: inline-flex;
+  margin-left: 10px;
+}
+#artist-list a {
+  display: flex;
+  align-items: center;
+  font-size: 75%;
+  text-decoration: none;
+  margin: 6px;
+  padding: 3px 13px 3px 3px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 4px rgba(1, 1, 1, 0.4);
+  border-radius: 15px;
+}
+#artist-list img {
+  height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: -10px 10px -10px -20px;
+  border-radius: 50%;
+}
