@@ -25,9 +25,7 @@ export default function Home() {
         <div className="entry-content">
           <a className="anchor" name="clients" href="#">&nbsp;</a>
           <h1>clients</h1>
-          <h2>Institutions/Organizations:</h2>
           <Organizations />
-          <h2>Photographers/Artists:</h2>
           <Clients />
         </div>
         <div className="entry-content">
@@ -39,11 +37,11 @@ export default function Home() {
           <a className="anchor" name="contact" href="#">&nbsp;</a>
           <h1>contact</h1>
           For now, the best way to reach me is through one of the following:
-          <h1>
-              <a href="https://www.linkedin.com/in/ryanbuckleyca/" aria-label="linkedIn"><i className="fab fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/apinrise/"aria-label="instagram"><i className="fab fa-instagram"></i></a>
-              <a href="https://facebook.com/ryanbuckleyca"aria-label="facebook"><i className="fab fa-facebook"></i></a>
-          </h1>
+          <h2 className="contact-icons">
+              <a href="https://www.linkedin.com/in/ryanbuckleyca/" aria-label="linkedIn"><img src={'/images/socialicons_01.png'} alt="LinkedIn icon" /></a>
+              <a href="https://www.instagram.com/apinrise/"aria-label="instagram"><img src={'images/socialicons_03.png'} alt="Instagram icon" /></a>
+              <a href="https://facebook.com/ryanbuckleyca"aria-label="facebook"><img src={'images/socialicons_04.png'} alt="Facebook icon" /></a>
+          </h2>
         </div>
       </main>
     </div>

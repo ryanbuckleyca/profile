@@ -67,11 +67,12 @@ const clientList = [
 export default function clients() {
   return(
     <div id="artist-list">
-    {
-      clientList.map(client =>
-        <div><a href={client.href}><img alt="avatar card" src={'clients/' + client.avatar} />{client.name}</a></div>
-      )
-    }
+      <h2>Photographers/Artists:</h2>
+      {
+        clientList.map(client =>
+          <div><a href={client.href}><img alt="avatar card" src={'clients/' + client.avatar} />{client.name}</a></div>
+        )
+      }
     </div>
   )
 }
