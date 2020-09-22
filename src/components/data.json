@@ -1,0 +1,179 @@
+{
+  "projects": [
+    {
+      "href": "http://www.commonscloud.cc/",
+      "img": "commonscloud.png",
+      "type": "Community network",
+      "icons": ["ruby.png", "rails.png", "js.png"],
+      "desc": "CommonsCloud.cc is a community mutual aid app build with Ruby on Rails."
+    },
+    {
+      "href": "http://freewheelnow.herokuapp.com/",
+      "img": "freewheel.png",
+      "type": "Online marketplace",
+      "icons": ["ruby.png", "rails.png", "js.png"],
+      "desc": "I helped as a lead developer to build an online marketplace in Ruby on Rails to rent and lease interesting and high-end bikes by the hour, day, or week."
+    },
+    {
+      "href": "http://311.rocks/",
+      "img": "grocery-list.png",
+      "type": "Mobile design",
+      "icons": ["reef.png", "js.png", "node.png"],
+      "desc": "Web-based cross-platform apps like GroceryList, an application for roomates to share the task of shopping, built in Express.js and a light-weight React alternative 'Reef.js'."
+    },
+    {
+      "href": "http://www.magnumconsortium.net/",
+      "img": "magnumconsortium.png",
+      "type": "Drupal development",
+      "icons": ["drupal.png"],
+      "desc": "I have experience with Drupal, like the MagnumConsortium pilot project demonstrating an online consortium relating collecting instutions around the world."
+    },
+    {
+      "href": "#",
+      "img": "filemaker.png",
+      "type": "Filemaker databases",
+      "icons": ["fmp.png"],
+      "desc": "For the past several years I've built dozens of custom Filemaker databases for artists looking for low-cost, DIY archiving tools."
+    },
+    {
+      "href": "http://www.be-hold.com/",
+      "img": "be-hold.png",
+      "type": "Wordpress",
+      "icons": ["wp.png"],
+      "desc": "I've constructed headless Wordpress CMS for ease of back-end editing with custom-integrated phpList for low-cost newsletter distribution."
+    },
+    {
+      "href": "http://www.ryanbuckley.ca/findingaid/chusseau-flaviens.xml",
+      "img": "chusseau-flaviens.png",
+      "type": "EAD finding aids",
+      "icons": ["xml.png", "json.png"],
+      "desc": "I can build an XML/EAD finding aid like this one I made for George Eastman Museum using XSLT and Flickr API to enhance traditional static museum research tools."
+    },
+    {
+      "href": "http://www.abigailheyman.com",
+      "img": "heymanwebsite.png",
+      "type": "Squarespace",
+      "icons": ["css.png", "squarespace.png"],
+      "desc": "I have experience setting up quick plug-and-play squarespace sites with themed layouts and custom css."
+    }
+  ],
+  "artists": [
+    {
+      "name": "Susan Meiselas",
+      "href": "http://www.susanmeiselas.com/",
+      "avatar": "mes.jpg"
+    },
+    {
+      "href": "http://www.imogencunningham.com/",
+      "avatar": "cui.jpg",
+      "name": "Imogen Cunningham"
+    },
+    {
+      "href": "http://www.elliotterwitt.com/",
+      "avatar": "ere.jpg",
+      "name": "Elliott Erwitt"
+    },
+    {
+      "href": "http://www.magnumphotos.com/photographer/paul-fusco/",
+      "avatar": "fup.jpg",
+      "name": "Paul Fusco"
+    },
+    {
+      "href": "http://www.ytobarrada.com/",
+      "avatar": "yto.jpg",
+      "name": "Yto Barrada"
+    },
+    {
+      "href": "http://wendyewald.com/",
+      "avatar": "eww.jpg",
+      "name": "Wendy Ewald"
+    },
+    {
+      "href": "http://robertburley.com/",
+      "avatar": "bur.jpg",
+      "name": "Robert Burley"
+    },
+    {
+      "href": "http://www.abigailheyman.com/",
+      "avatar": "hea.jpg",
+      "name": "Abigail Heyman"
+    },
+    {
+      "href": "http://meghannriepenhoff.com/",
+      "avatar": "rim.jpg",
+      "name": "Meghann Riepenhoff"
+    },
+    {
+      "href": "http://www.legacy.com/obituaries/nytimes/obituary.aspx?n=dorothy-m-beskind&pid=173026644",
+      "avatar": "bed.jpg",
+      "name": "Dorothy Beskind"
+    },
+    {
+      "href": "http://www.henrygrossman.com/",
+      "avatar": "grh.jpg",
+      "name": "Henry Grossman"
+    },
+    {
+      "href": "http://www.kenheyman.com/index",
+      "avatar": "hek.jpg",
+      "name": "Ken Heyman"
+    }
+  ],
+  "orgs": [
+    {
+      "href": "http://www.magnumphotos.com",
+      "alt": "Magnum Photos logo",
+      "logo": "magnum.jpeg"
+    },
+    {
+      "href": "http://www.icp.org",
+      "alt": "ICP logo",
+      "logo": "icp.png"
+    },
+    {
+      "href": "http://www.apag.us",
+      "alt": "APAG logo",
+      "logo": "apag.png"
+    },
+    {
+      "href": "http://www.buddhist-archive.org",
+      "alt": "BAP logo",
+      "logo": "bap.png"
+    },
+    {
+      "href": "http://www.be-hold.com",
+      "alt": "Be-hold logo",
+      "logo": "behold.png"
+    },
+    {
+      "href": "http://www.archiveofmodernconflict.com/",
+      "alt": "AMC logo",
+      "logo": "amc.png"
+    },
+    {
+      "href": "http://www.interferencearchive.org",
+      "alt": "IA logo",
+      "logo": "ia.png"
+    },
+    {
+      "href": "http://www.ryersonimagecentre.ca",
+      "alt": "RIC logo",
+      "logo": "ric.png"
+    },
+    {
+      "href": "http://www.eastman.org/",
+      "alt": "GEM logo",
+      "logo": "gem.jpeg"
+    },
+    {
+      "href": "http://www.pictouphotos.ca/",
+      "alt": "PHPS logo",
+      "logo": "phps.png"
+    },
+    {
+      "href": "http://www.magnunfoundation.org",
+      "alt": "MF logo",
+      "logo": "mf.png"
+    }
+  ]
+}
