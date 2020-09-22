@@ -36,6 +36,19 @@
   align-items: center;
   height: auto;
 }
+@media screen and (min-width:993px) {
+  #app-list .card-title {
+    margin-top: -60px;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width:576px) {
+  #app-list .card-title {
+    margin-top: -70px;
+    padding-top: 55px;
+    padding-bottom: 10px;
+  }
+}
 #app-list .card-title span {
   margin: 0;
   padding: 5px 10px 5px;
@@ -60,6 +73,16 @@
   background: #FDFBEC;
   border: 1px solid rgba(1, 1, 1, 0.3);
   border-radius: 50%;
+}
+@media screen and (min-width:993px) {
+  #app-list .card-title .icon {
+    width: 25px;
+  }
+}
+@media screen and (max-width:576px) {
+  #app-list .card-title .icon {
+    width: 25px;
+  }
 }
 #app-list .card-body {
   text-align: left;
