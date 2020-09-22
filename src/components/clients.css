@@ -6,6 +6,9 @@
     width: calc(50% - 20px);
     margin: 0;
   }
+  #artist-list div {
+    margin: 6px;
+  }
 }
 #artist-list div {
   display: inline-flex;
