@@ -11,11 +11,11 @@ export default function Home() {
   return <Layout>
      <Helmet>
         <title>Ryan Buckley • Web Developer and Photo Archives Specialist</title>
-        <meta property="og:url" content="http://ryanbuckley.ca" />
+        <meta property="og:url" content="//ryanbuckley.ca" />
         <meta property="og:type" content="" />
         <meta property="og:title" content="Ryan Buckley" />
         <meta property="og:description" content="Web Developer and Photo Archives Specialist" />
-        <meta property="og:image" content="http://ryanbuckley.ca/images/screenshot.png" />
+        <meta property="og:image" content="//ryanbuckley.ca/images/screenshot.png" />
     </Helmet>
     <div id="container">
       <div id="top-section">&nbsp;</div>
