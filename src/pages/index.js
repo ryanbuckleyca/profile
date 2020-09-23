@@ -1,14 +1,15 @@
 import React from "react"
 import { Helmet } from 'react-helmet'
-import Layout from "../components/layout";
+import "../components/index.css";
 import Menu from "../components/menu";
 import Header from "../components/header";
 import Projects from "../components/projects";
 import Clients from "../components/clients";
 import Organizations from "../components/organizations";
+import data from "../components/data.json"
 
 export default function Home() {
-  return <Layout>
+  return <>
      <Helmet>
         <title>Ryan Buckley • Web Developer and Photo Archives Specialist</title>
         <meta property="og:url" content="//ryanbuckley.ca" />
@@ -25,13 +26,13 @@ export default function Home() {
         <div className="entry-content">
           <a className="anchor" name="clients" href="#">&nbsp;</a>
           <h1>clients</h1>
-          <Organizations />
-          <Clients />
+          <Organizations data={data.orgs} />
+          <Clients data={data.artists} />
         </div>
         <div className="entry-content">
           <a className="anchor" name="apps" href="#">&nbsp;</a>
           <h1>applications</h1>
-          <Projects />
+          <Projects data={data.projects} />
         </div>
         <div className="entry-content">
           <a className="anchor" name="contact" href="#">&nbsp;</a>
@@ -48,5 +49,5 @@ export default function Home() {
     <footer>
       <div>&copy; copyright 2019, all rights reserved</div>
     </footer>
-  </Layout>
+  </>
 }
