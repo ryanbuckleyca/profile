@@ -9,7 +9,12 @@
 }
 #artist-list div {
   display: inline-flex;
-  margin-left: 10px;
+  margin-left: 15px;
+}
+#artist-list div:hover a {
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+  filter: brightness(110%);
+  transform: scale(1.02);
 }
 #artist-list a {
   display: flex;

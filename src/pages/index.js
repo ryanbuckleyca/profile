@@ -9,6 +9,13 @@ import Organizations from "../components/organizations";
 import data from "../components/data.json"
 
 export default function Home() {
+
+  React.useEffect(()=>{
+    document.addEventListener('scroll', (e) => {
+      console.log('scrolling');
+    });
+  })
+
   return <>
      <Helmet>
         <title>Ryan Buckley • Web Developer and Photo Archives Specialist</title>

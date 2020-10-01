@@ -14,8 +14,9 @@
 }
 #menu .icon {
   height: 20px;
-  margin: 7px;
+  margin: 0 7px 0;
 }
+
 #menu a {
   float: left;
   display: inline-flex;
@@ -26,6 +27,12 @@
   text-decoration: none;
   font-size: 21px;
 }
+@media screen and (max-width: 375px) {
+  #menu a {
+    flex-direction: column;
+  }
+}
+
 #menu a:hover {
   background-color: teal;
   color: white;
