@@ -12,13 +12,14 @@ class Home extends Component {
 
   constructor() {
     super()
-    this.state = {windowWidth: window.innerWidth};
+    this.state = {windowWidth: null};
   }
 
   updateDimensions = () => {
-    this.setState({ windowWidth: window.innerWidth});
+    this.setState({ windowWidth: window.innerWidth });
   };
   componentDidMount() {
+    this.updateDimensions();
     window.addEventListener('resize', this.updateDimensions);
   }
   componentWillUnmount() {
