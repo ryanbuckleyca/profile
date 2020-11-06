@@ -12,6 +12,7 @@ h1 {
   text-align: center;
   size: 22pt;
   color: #00cdcd;
+  padding: 3vw 0;
 }
 h2 {
   font-family: 'Amatic SC', cursive;
@@ -73,7 +74,7 @@ a {
 }
 .entry-content {
   clear: both;
-  padding: 0 8vw 0 8vw;
+  padding: 1.5em 4em 0 4em;
   text-align: center;
 }
 .entry-content p {

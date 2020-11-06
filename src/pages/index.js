@@ -41,19 +41,16 @@ class Home extends Component {
         <main id="content">
           <Header />
           <Menu windowWidth={this.state.windowWidth} />
-          <div className="entry-content">
-            <a className="anchor" name="clients" href="#">&nbsp;</a>
+          <div className="entry-content" id="clients">
             <h1>clients</h1>
             <Organizations data={data.orgs} />
             <Clients data={data.artists} />
           </div>
-          <div className="entry-content">
-            <a className="anchor" name="apps" href="#">&nbsp;</a>
+          <div className="entry-content" id="apps">
             <h1>applications</h1>
             <Projects data={data.projects} />
           </div>
-          <div className="entry-content">
-            <a className="anchor" name="contact" href="#">&nbsp;</a>
+          <div className="entry-content" id="contact">
             <h1>contact</h1>
             For now, the best way to reach me is through one of the following:
             <h2 className="contact-icons">
@@ -61,7 +58,6 @@ class Home extends Component {
                 <a href="http://instagram.com/apinrise/" aria-label="instagram"><img src={'images/social_ig.png'} alt="Instagram icon" /></a>
                 <a href="http://facebook.com/ryanbuckleyca" aria-label="facebook"><img src={'images/social_fb.png'} alt="Facebook icon" /></a>
                 <a href="http://github.com/ryanbuckleyca" aria-label="git hub"><img src={'images/social_github.png'} alt="GitHub icon" /></a>
-
             </h2>
           </div>
         </main>
