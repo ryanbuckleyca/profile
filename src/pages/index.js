@@ -57,9 +57,11 @@ class Home extends Component {
             <h1>contact</h1>
             For now, the best way to reach me is through one of the following:
             <h2 className="contact-icons">
-                <a href="https://www.linkedin.com/in/ryanbuckleyca/" aria-label="linkedIn"><img src={'/images/socialicons_01.png'} alt="LinkedIn icon" /></a>
-                <a href="https://www.instagram.com/apinrise/"aria-label="instagram"><img src={'images/socialicons_03.png'} alt="Instagram icon" /></a>
-                <a href="https://facebook.com/ryanbuckleyca"aria-label="facebook"><img src={'images/socialicons_04.png'} alt="Facebook icon" /></a>
+                <a href="http://linkedin.com/in/ryanbuckleyca/" aria-label="linked in"><img src={'/images/social_linkedin.png'} alt="LinkedIn icon" /></a>
+                <a href="http://instagram.com/apinrise/" aria-label="instagram"><img src={'images/social_ig.png'} alt="Instagram icon" /></a>
+                <a href="http://facebook.com/ryanbuckleyca" aria-label="facebook"><img src={'images/social_fb.png'} alt="Facebook icon" /></a>
+                <a href="http://github.com/ryanbuckleyca" aria-label="git hub"><img src={'images/social_github.png'} alt="GitHub icon" /></a>
+
             </h2>
           </div>
         </main>
