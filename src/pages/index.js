@@ -56,7 +56,6 @@ class Home extends Component {
             <h2 className="contact-icons">
                 <a href="http://linkedin.com/in/ryanbuckleyca/" aria-label="linked in"><img src={'/images/social_linkedin.png'} alt="LinkedIn icon" /></a>
                 <a href="http://instagram.com/apinrise/" aria-label="instagram"><img src={'images/social_ig.png'} alt="Instagram icon" /></a>
-                <a href="http://facebook.com/ryanbuckleyca" aria-label="facebook"><img src={'images/social_fb.png'} alt="Facebook icon" /></a>
                 <a href="http://github.com/ryanbuckleyca" aria-label="git hub"><img src={'images/social_github.png'} alt="GitHub icon" /></a>
             </h2>
           </div>
