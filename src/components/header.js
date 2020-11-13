@@ -10,7 +10,7 @@ export default function header() {
       <span id="social">
           <a href="https://www.linkedin.com/in/ryanbuckleyca/"><img src={'/images/social_linkedin.png'} alt="LinkedIn icon" /></a>
           <a href="https://github.com/ryanbuckleyca/"><img src={'images/social_github.png'} alt="GitHub icon" /></a>
-          <a href="https://www.instagram.com/apinrise/"><img src={'images/social_ia.png'} alt="Instagram icon" /></a>
+          <a href="https://www.instagram.com/apinrise/"><img src={'images/social_ig.png'} alt="Instagram icon" /></a>
       </span>
     </div>
   </header>
