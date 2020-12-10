@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import { Helmet } from 'react-helmet'
-import { ScrollTo, ScrollArea } from "react-scroll-to";
+import { ScrollTo } from "react-scroll-to";
 import "../components/index.css";
 import Menu from "../components/menu";
 import Header from "../components/header";
@@ -12,13 +12,16 @@ import data from "../components/data.json"
 
 class Home extends Component {
 
-  state = {windowWidth: null};
+  state = { windowWidth: null };
 
   refs = {
     clients: React.createRef(),
     apps: React.createRef(),
     contact: React.createRef()
   }
+
+  apps = React.createRef();
+
 
   updateDimensions = () => {
     this.setState({ 
@@ -52,18 +55,25 @@ class Home extends Component {
         <main id="content">
           <Header />
           <ScrollTo>
-            <Menu 
-              windowWidth={this.state.windowWidth} 
-              scroll={{scroll}}
-              refs={this.refs}
-            />
+            {({scroll}) => {
+              return (
+              <button onClick={() => scroll({ ref: this.apps, x: 20, y: 500 })}>
+                test
+              </button>
+              )
+            }}
           </ScrollTo>
-          <section className="entry-content" id="clients" ref={this.refs.clients}>
+          {/* <Menu 
+            windowWidth={this.state.windowWidth} 
+            refs={this.refs}
+            scroll={scroll}
+          />   */}
+            <section className="entry-content" id="clients" ref={this.refs.clients}>
             <h1>clients</h1>
             <Organizations data={data.orgs} />
             <Clients data={data.artists} />
           </section>
-          <section className="entry-content" id="apps" ref={this.refs.apps}>
+          <section className="entry-content" id="apps" ref={this.apps}>
             <h1>applications</h1>
             <Projects data={data.projects} />
           </section>
