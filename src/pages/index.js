@@ -49,7 +49,7 @@ class Home extends Component {
             scrollTo={scrollTo}
             windowWidth={this.state.windowWidth} 
           />  
-            <section className="entry-content" id="clients">
+          <section className="entry-content" id="clients">
             <h1>clients</h1>
             <Organizations data={data.orgs} />
             <Clients data={data.artists} />
