@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import { Helmet } from 'react-helmet'
-import { ScrollTo } from "react-scroll-to";
 import "../components/index.css";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Menu from "../components/menu";
 import Header from "../components/header";
 import Projects from "../components/projects";
@@ -13,15 +13,6 @@ import data from "../components/data.json"
 class Home extends Component {
 
   state = { windowWidth: null };
-
-  refs = {
-    clients: React.createRef(),
-    apps: React.createRef(),
-    contact: React.createRef()
-  }
-
-  apps = React.createRef();
-
 
   updateDimensions = () => {
     this.setState({ 
@@ -54,30 +45,20 @@ class Home extends Component {
         <span id="top-section">&nbsp;</span>
         <main id="content">
           <Header />
-          <ScrollTo>
-            {({scroll}) => {
-              return (
-              <button onClick={() => scroll({ ref: this.apps, x: 20, y: 500 })}>
-                test
-              </button>
-              )
-            }}
-          </ScrollTo>
-          {/* <Menu 
+          <Menu 
+            scrollTo={scrollTo}
             windowWidth={this.state.windowWidth} 
-            refs={this.refs}
-            scroll={scroll}
-          />   */}
-            <section className="entry-content" id="clients" ref={this.refs.clients}>
+          />  
+            <section className="entry-content" id="clients">
             <h1>clients</h1>
             <Organizations data={data.orgs} />
             <Clients data={data.artists} />
           </section>
-          <section className="entry-content" id="apps" ref={this.apps}>
+          <section className="entry-content" id="apps">
             <h1>applications</h1>
             <Projects data={data.projects} />
           </section>
-          <section className="entry-content" id="contact" ref={this.refs.conact}>
+          <section className="entry-content" id="contact">
             <h1>contact</h1>
             For now, the best way to reach me is through one of the following:
             <h2 className="contact-icons">
