@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import { Helmet } from 'react-helmet'
+import { ScrollTo, ScrollArea } from "react-scroll-to";
 import "../components/index.css";
 import Menu from "../components/menu";
 import Header from "../components/header";
@@ -8,9 +9,16 @@ import Clients from "../components/clients";
 import Organizations from "../components/organizations";
 import data from "../components/data.json"
 
+
 class Home extends Component {
 
   state = {windowWidth: null};
+
+  refs = {
+    clients: React.createRef(),
+    apps: React.createRef(),
+    contact: React.createRef()
+  }
 
   updateDimensions = () => {
     this.setState({ 
@@ -31,29 +39,35 @@ class Home extends Component {
 
   render() {
     return <>
-       <Helmet>
-          <title>Ryan Buckley • Web Developer and Photo Archives Specialist</title>
-          <meta property="og:url" content="//ryanbuckley.ca" />
-          <meta property="og:type" content="" />
-          <meta property="og:title" content="Ryan Buckley" />
-          <meta property="og:description" content="Web Developer and Photo Archives Specialist" />
-          <meta property="og:image" content="//ryanbuckley.ca/images/screenshot.png" />
+      <Helmet>
+        <title>Ryan Buckley • Web Developer and Photo Archives Specialist</title>
+        <meta property="og:url" content="//ryanbuckley.ca" />
+        <meta property="og:type" content="" />
+        <meta property="og:title" content="Ryan Buckley" />
+        <meta property="og:description" content="Web Developer and Photo Archives Specialist" />
+        <meta property="og:image" content="//ryanbuckley.ca/images/screenshot.png" />
       </Helmet>
       <div id="container">
-        <section id="top-section">&nbsp;</section>
+        <span id="top-section">&nbsp;</span>
         <main id="content">
           <Header />
-          <Menu windowWidth={this.state.windowWidth} />
-          <section className="entry-content" id="clients">
+          <ScrollTo>
+            <Menu 
+              windowWidth={this.state.windowWidth} 
+              scroll={{scroll}}
+              refs={this.refs}
+            />
+          </ScrollTo>
+          <section className="entry-content" id="clients" ref={this.refs.clients}>
             <h1>clients</h1>
             <Organizations data={data.orgs} />
             <Clients data={data.artists} />
           </section>
-          <section className="entry-content" id="apps">
+          <section className="entry-content" id="apps" ref={this.refs.apps}>
             <h1>applications</h1>
             <Projects data={data.projects} />
           </section>
-          <section className="entry-content" id="contact">
+          <section className="entry-content" id="contact" ref={this.refs.conact}>
             <h1>contact</h1>
             For now, the best way to reach me is through one of the following:
             <h2 className="contact-icons">
@@ -65,9 +79,7 @@ class Home extends Component {
         </main>
       </div>
       <footer>
-        <div>
-          &copy; copyright 2019, all rights reserved
-        </div>
+        &copy; copyright 2019, all rights reserved
       </footer>
     </>
   }
