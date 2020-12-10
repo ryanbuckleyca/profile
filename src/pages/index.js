@@ -10,20 +10,23 @@ import data from "../components/data.json"
 
 class Home extends Component {
 
-  constructor() {
-    super()
-    this.state = {windowWidth: null};
-  }
+  state = {windowWidth: null};
 
   updateDimensions = () => {
-    this.setState({ windowWidth: window.innerWidth });
+    this.setState({ 
+      windowWidth: window.innerWidth 
+    });
   };
+
   componentDidMount() {
     this.updateDimensions();
-    window.addEventListener('resize', this.updateDimensions);
+    window.addEventListener(
+      'resize', 
+      this.updateDimensions
+    );
   }
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions);
+    window.removeEventListener('resize');
   }
 
   render() {
@@ -37,32 +40,34 @@ class Home extends Component {
           <meta property="og:image" content="//ryanbuckley.ca/images/screenshot.png" />
       </Helmet>
       <div id="container">
-        <div id="top-section">&nbsp;</div>
+        <section id="top-section">&nbsp;</section>
         <main id="content">
           <Header />
           <Menu windowWidth={this.state.windowWidth} />
-          <div className="entry-content" id="clients">
+          <section className="entry-content" id="clients">
             <h1>clients</h1>
             <Organizations data={data.orgs} />
             <Clients data={data.artists} />
-          </div>
-          <div className="entry-content" id="apps">
+          </section>
+          <section className="entry-content" id="apps">
             <h1>applications</h1>
             <Projects data={data.projects} />
-          </div>
-          <div className="entry-content" id="contact">
+          </section>
+          <section className="entry-content" id="contact">
             <h1>contact</h1>
             For now, the best way to reach me is through one of the following:
             <h2 className="contact-icons">
-                <a href="http://linkedin.com/in/ryanbuckleyca/" aria-label="linked in"><img src={'/images/social_linkedin.png'} alt="LinkedIn icon" /></a>
-                <a href="http://github.com/ryanbuckleyca" aria-label="git hub"><img src={'images/social_github.png'} alt="GitHub icon" /></a>
-                <a href="http://instagram.com/apinrise/" aria-label="instagram"><img src={'images/social_ig.png'} alt="Instagram icon" /></a>
+              <a href="http://linkedin.com/in/ryanbuckleyca/" aria-label="linked in"><img src={'/images/social_linkedin.png'} alt="LinkedIn icon" /></a>
+              <a href="http://github.com/ryanbuckleyca" aria-label="git hub"><img src={'images/social_github.png'} alt="GitHub icon" /></a>
+              <a href="http://instagram.com/apinrise/" aria-label="instagram"><img src={'images/social_ig.png'} alt="Instagram icon" /></a>
             </h2>
-          </div>
+          </section>
         </main>
       </div>
       <footer>
-        <div>&copy; copyright 2019, all rights reserved</div>
+        <div>
+          &copy; copyright 2019, all rights reserved
+        </div>
       </footer>
     </>
   }
