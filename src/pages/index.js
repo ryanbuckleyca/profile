@@ -49,16 +49,16 @@ class Home extends Component {
             scrollTo={scrollTo}
             windowWidth={this.state.windowWidth} 
           />  
-          <section className="entry-content" id="clients">
+          <section id="clients" className="entry-content">
             <h1>clients</h1>
             <Organizations data={data.orgs} />
             <Clients data={data.artists} />
           </section>
-          <section className="entry-content" id="apps">
+          <section id="apps" className="entry-content">
             <h1>applications</h1>
             <Projects data={data.projects} />
           </section>
-          <section className="entry-content" id="contact">
+          <section id="contact" className="entry-content">
             <h1>contact</h1>
             For now, the best way to reach me is through one of the following:
             <h2 className="contact-icons">
