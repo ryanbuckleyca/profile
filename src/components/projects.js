@@ -5,10 +5,15 @@ export default function projects(props) {
   return (
     <div id='app-list' className='row'>
     {
-      props.data.map(project =>
+      props.data.map((project, i) =>
         <a href={project.href} title=''>
-          <div className='card-img' style={{backgroundImage: `url('apps/${project.img}')`}}></div>
-          <div className='card-title' style={{backgroundImage: `url('images/wave${Math.floor(Math.random()*5)+1}.svg')`}}>
+          <div 
+            className='card-img' 
+            style={{backgroundImage: `url('apps/${project.img}')`}}>
+          </div>
+          <div
+            className='card-title' 
+            style={{backgroundImage: `url('images/wave${i%6}.svg')`}}>
             <span>{project.type}</span>
             <div className="icons">
               {project.icons.map(icon => <img src={'icons/' + icon} className='icon' alt={icon} />)}

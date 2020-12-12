@@ -4,6 +4,7 @@ import "../components/index.css";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Menu from "../components/menu";
 import Header from "../components/header";
+import Social from "../components/social";
 import Projects from "../components/projects";
 import Clients from "../components/clients";
 import Organizations from "../components/organizations";
@@ -60,11 +61,8 @@ class Home extends Component {
           </section>
           <section id="contact" className="entry-content">
             <h1>contact</h1>
-            For now, the best way to reach me is through one of the following:
             <h2 className="contact-icons">
-              <a href="http://linkedin.com/in/ryanbuckleyca/" aria-label="linked in"><img src={'/images/social_linkedin.png'} alt="LinkedIn icon" /></a>
-              <a href="http://github.com/ryanbuckleyca" aria-label="git hub"><img src={'images/social_github.png'} alt="GitHub icon" /></a>
-              <a href="http://instagram.com/apinrise/" aria-label="instagram"><img src={'images/social_ig.png'} alt="Instagram icon" /></a>
+              <Social />
             </h2>
           </section>
         </main>

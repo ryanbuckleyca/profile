@@ -43,16 +43,26 @@ header {
   text-decoration: underline;
 }
 #social {
-  margin: 0 auto;
   position: absolute;
-  text-align: center;
-  bottom: -20px;
+  bottom: -10px;
 }
-#social img {
-  height: 5vw;
-  max-height: 40px;
-  min-height: 30px;
+.icons {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.icons a {
+  align-items: center;
+  display: inherit;
+  height: 30px;
+  flex: 0 0 auto;
+  justify-content: center;
+  width: 30px;
+  padding: 5px;
   border-radius: 50%;
+  background-color: white;
+  font-size: 30px;
 }
 @media screen and (max-width:768px)
 {
@@ -84,8 +94,8 @@ header {
     border-radius: 15vw 14vw 16vw 19vw;
     border-bottom: 5px solid black;
     margin-top: 3vw;
-    padding: 35px;
-    background-color: #e9e9e9;
+    padding: 35px 40px;
+    background-color: #e0e0e0;
     line-height: 19pt;
     font-size: 16pt;
   }
