@@ -51,12 +51,6 @@ a {
   background-repeat: no-repeat;
   background-position-x: right;
 }
-#top-section {
-  background-image: url('../../static/images/sheetfilm_03.png');
-  background-repeat: repeat-y;
-  background-size: 100%;
-  padding: 1vw 4vw 1vw 4vw;
-}
 
 /***********/
 /* content */

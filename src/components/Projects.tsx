@@ -1,11 +1,11 @@
 import React from "react"
 import "./projects.css"
 
-export default function projects(props) {
+const Projects = ({ data }) => {
   return (
     <div id='app-list' className='row'>
     {
-      props.data.map((project, i) =>
+      data.map((project, i) =>
         <a href={project.href} title=''>
           <div 
             className='card-img' 
@@ -28,3 +28,5 @@ export default function projects(props) {
     </div>
   )
 }
+
+export default Projects

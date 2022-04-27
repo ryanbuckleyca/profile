@@ -1,9 +1,8 @@
 import React from "react"
 import "./header.css"
-import Social from "./social"
+import Social from "./Socials"
 
-export default function header() {
-  return (
+const Header = () => (
   <header>
     <img className="profile" src={'images/square-me.jpg'} alt="profile" />
     <div className="speech">
@@ -15,5 +14,7 @@ export default function header() {
       </span>
     </div>
   </header>
-  )
-}
+)
+
+export default Header
+

@@ -6,5 +6,6 @@
 
 plugins: [
   `gatsby-plugin-react-helmet`,
-  `gatsby-plugin-smoothscroll`
+  `gatsby-plugin-smoothscroll`,
+  `gatsby-plugin-typescript-scss-modules`
 ]
